@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>CSS3 Carousel</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="slide">
+				<ul class="slides">
+					<li class="current"><img src="images/slide1.png" alt=""></li>
+					<li><img src="images/slide2.png" alt=""></li>
+					<li><img src="images/slide3.png" alt=""></li>
+					<li><img src="images/slide4.png" alt=""></li>
+				</ul>
+				<ul class="ctrl">
+					<li><a href="#prev"><img src="images/slide_prev.png" width="16" height="92"></a></li>
+					<li><a href="#next"><img src="images/slide_next.png" width="16" height="92"></a></li>
+				</ul>
+				<ul class="indicator"></ul>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/css3carousel.js"></script>
+		<script>$(function(){ $('#slide').slide(); });</script>
+	</body>
+</html>
